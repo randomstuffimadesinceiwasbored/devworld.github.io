@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 350px;
+    height: 450px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: scroll;
+    transition: height .2s ease;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.input-box-language,
+.input-box-user,
+.input-box-description,
+.input-box-years {
+    position: relative;
+    width: 80%;
+    height: 30px;
+    border-bottom: 2px solid #162938;
+    margin: 10px 0;
+    margin-left: 10%;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.send-request {
+    width: 55%;
+    height: 30px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    margin: 10px 0;
+    margin-left: 22%;
+}
+
+p {
+    font-size: 15px;
+    margin: 6px 0;
+    margin-left: 10%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color: #2D2E2E;
+    user-select: none;
+}
+
+.nav a {
+    position: relative;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #0F0F0F;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: auto;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    
+    .send-request {
+        margin-left: 20%;
+    }
+    
+    p {
+        margin-left: 5%;
+    }
+}
